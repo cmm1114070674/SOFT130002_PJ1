@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>浏览页</title>
+  <link href="css/browse.css" rel="stylesheet" type="text/css">
+  <script src="js/browse.js"></script>
+</head>
+<body>
+  <header id="head">
+    <nav>
+      <h3><a href="../index.html">
+        <img src="../img/icons/logo.jpg" class="logo">
+        </a>
+        <div class="div-left">
+        <a href="../index.html" class="link">首页</a>
+        <a href="browse.html" class="link" style="color:#7693AD">浏览页</a>
+        <a href="search.html" class="link">搜索页</a>
+        </div>
+      </h3>
+    </nav>
+    <div class="div-right">
+      <h3>
+        <ul id="main">
+          <li>个人中心
+            <ul class="drop">
+              <div>
+                <li><a href="upload.html">上传</a></li>
+                <li><a href="myphoto.html">我的照片</a></li>
+                <li><a href="favor.html">我的收藏</a></li>
+                <li><a href="login.html">登入</a></li>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </h3>
+    </div>
+  </header>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="main-info">
+    <div class="main-left">
+      <div class="search-area">
+        <h4 class="search-title">标题搜索</h4>
+        <div class="search-line">
+          <form>
+            <input type="text" id="search-text">
+            <input type="submit" id="search-submit" onclick="display_alert()">
+          </form>
+        </div>
+      </div>
+      <div class="hot-content">
+        <h4 class="search-title">热门内容快速浏览</h4>
+        <div class="search-line">
+          <p><a onclick="display_alert()">China</a></p>
+          <p><a onclick="display_alert()">Shanghai</a></p>
+          <p><a onclick="display_alert()">Beijing</a></p>
+          <p><a onclick="display_alert()">Japan</a></p>
+          <p><a onclick="display_alert()">America</a></p>
+          <p><a onclick="display_alert()">San Francisco</a></p>
+        </div>
+      </div>
+      <div class="hot-content">
+        <h4 class="search-title">热门国家快速浏览</h4>
+        <div class="search-line">
+          <p><a onclick="display_alert()">China</a></p>
+          <p><a onclick="display_alert()">Japan</a></p>
+          <p><a onclick="display_alert()">America</a></p>
+        </div>
+      </div>
+      <div class="hot-content">
+        <h4 class="search-title">热门城市快速浏览</h4>
+        <div class="search-line">
+          <p><a onclick="display_alert()">Shanghai</a></p>
+          <p><a onclick="display_alert()">Beijing</a></p>
+          <p><a onclick="display_alert()">San Francisco</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-right">
+      <div class="filter">
+        <h4 class="search-title">筛选</h4>
+        <div class="filter-select">
+        <form name="form1" method="post" action="">
+          <select class="select">
+            <option value="title">主题</option>
+            <option value="title1">风景</option>
+            <option value="title2">人物</option>
+            <option value="title3">运动</option>
+          </select>
+          <select name="country" class="select" onChange="set_city(this, this.form.city);">
+            <option value="0">国家</option>
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+            <option value="Italy">Italy</option>
+            <option value="America">America</option>
+          </select>
+          <select name="city" class="select" id="citys">
+            <option value="0">选择城市</option>
+          </select>
+          <input type="submit" class="select-button" value="筛选" onclick="display_alert()">
+        </form>
+        </div>
+        <div class="filter-show">
+          <a href="details.html">
+            <div class="list-image">
+            </div>
+          </a>
+          <a href="details.html">
+            <div class="list-image">
+            </div>
+          </a>
+          <a href="details.html">
+            <div class="list-image">
+            </div>
+          </a>
+          <a href="details.html">
+            <div class="list-image">
+            </div>
+          </a>
+          <a href="details.html">
+            <div class="list-image">
+            </div>
+          </a>
+          <a href="details.html">
+            <div class="list-image">
+            </div>
+          </a>
+          <a href="details.html">
+            <div class="list-image">
+            </div>
+          </a>
+          <a href="details.html">
+            <div class="list-image">
+            </div>
+          </a>
+          <a href="details.html">
+            <div class="list-image">
+            </div>
+          </a>
+          <a href="details.html">
+            <div class="list-image">
+            </div>
+          </a>
+          <a href="details.html">
+            <div class="list-image">
+            </div>
+          </a>
+          <a href="details.html">
+            <div class="list-image">
+            </div>
+          </a>
+          <div class="pages">
+            < <span class="page">1</span> 2 3 4 5 6 ... 9 >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="copyright">
+      <p><a class="footer-a">Copyright © 2019-2021 SOFT130002 Project1. All Rights Reserved. 备案号：16307130079@fudan.edu.cn</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
